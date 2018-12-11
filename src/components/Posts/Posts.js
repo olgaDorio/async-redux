@@ -6,6 +6,8 @@ import { fetchAllPosts } from '../../actions';
 import '@material/react-card/dist/card.css';
 import './Posts.css'
 
+import Input from '../Input/Input';
+
 import Card, { CardPrimaryContent } from "@material/react-card";
 
 class Posts extends Component {
@@ -22,6 +24,7 @@ class Posts extends Component {
 
     return (
       <div className="Posts">
+        <Input value="value"></Input>
         {
           posts.slice(0, 10).map((post) => (
             <Card key={post.id} onClick={() => this.onPostClick(post.id)}>

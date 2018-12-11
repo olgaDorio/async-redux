@@ -1,0 +1,8 @@
+.Input {
+  display: flex;
+  flex-direction: column;
+}
+
+.Input_invalid input {
+  border: 2px solid red;
+}
